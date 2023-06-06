@@ -56,7 +56,7 @@ while True:
         humi = condition(values["Cidade"])[2]
         wind = condition(values["Cidade"])[3]
 
-        if condition(values["Cidade"][0]) == 'cidade não encontrada':
+        if condition(values["Cidade"])[0] == 'cidade não encontrada':
             window1['erro'].update('ERRO 404, Cidade não encontrada digite novamente')
 
         else:
